@@ -1,0 +1,167 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --primary-bg-color: #ffffff;
+}
+
+body {
+
+    background-color: #F5F5F5;
+    color: var(--primary-text-color);
+
+    font-family: Roboto, sans-serif;
+
+            font-size: 14px;
+                line-height: 1.71;
+                letter-spacing: 0.03em;
+}
+
+
+.list{
+    list-style: none;
+}
+
+/* Site-naw */
+
+.logo {
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.accent {
+    color: #000000;
+}
+
+.site-nav .link {
+
+    color: var(--title-text-color);
+
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.connection{
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.connection:hover,
+.connection:focus{
+    color: var(--accent-color);
+}
+
+
+
+
+
+
+
+/* Герой */
+
+
+
+.button{
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+
+    font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        text-decoration: none;
+        
+}
+
+.hero-title{
+    color: var(--primary-bg-color);
+    
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+}
+
+
+
+
+
+/*  Main */
+
+.section-title{
+
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        
+
+color: var(--title-text-color);
+}
+
+/* section 1 */
+
+
+
+.feature .title {
+        color: var(--title-text-color);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            text-transform: uppercase;
+
+}
+
+
+
+
+/* section 2*/
+
+
+/* sektion 3 */
+.team .name-person{
+    color: var(--title-text-color);
+    font-weight: 500;
+}
+
+.team .position{
+    
+        font-size: 16px;
+        line-height: 1.19;
+        
+}
+
+/* Підвал */
+.accentnew{
+    color: var(--primary-bg-color);
+}
+
+.footer-connection{
+
+
+    font-style: normal;
+    font-weight: 400;
+
+    
+
+    color: rgba(255, 255, 255, 0.6);
+
+
+
+
