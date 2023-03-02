@@ -155,14 +155,12 @@ img{
     margin-left: auto;
     
 }
-.connection .phone::before{
+
+.connection-icon{
     display: inline-block;
-    content: "";
-    background-image: url(../images/icon/phone.png);
-    width: 10px;
-    height: 16px;
     margin-right: 10px;
-    vertical-align: middle;
+    align-items: center;
+    
     
 }
 
