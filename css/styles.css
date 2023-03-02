@@ -129,8 +129,10 @@ img{
 }
 
 .connection a {
+    display:flex;
     color: var(--primary-text-color);
     text-decoration: none;
+    align-items: center;
     
 }
 
@@ -157,12 +159,9 @@ img{
 }
 
 .connection-icon{
-    display: inline-block;
     margin-right: 10px;
-    align-items: center;
-    
-    
 }
+
 
 
 
