@@ -4,6 +4,7 @@
     --accent-color: #2196f3;
     --primary-bg-color: #ffffff;
     --two-bg-color:#F5F4FA;
+    --icon-color:#afb1b8;
 }
 
 /* body {
@@ -78,8 +79,9 @@ img{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid darkgreen;
+    outline: 1px solid red;
 }
+
 
 .logo {
     font-family: 'Raleway';
@@ -87,7 +89,7 @@ img{
     line-height: 1.19;
     color: var(--accent-color);
     text-decoration: none;
-  
+   
 }
 
 .accent {
@@ -140,8 +142,8 @@ img{
     margin-left: 40px;
 }
 
-.connection a:hover,
-.connection a:focus{
+.connection .item a:hover,
+.connection .item a:focus{
     color: var(--accent-color);
 }
 
@@ -158,7 +160,7 @@ img{
     
 }
 
-.connection-icon{
+.cnt-icon{
     margin-right: 10px;
 }
 
@@ -249,37 +251,38 @@ img{
     margin-right: 0;
 }
 
-.feature-content::before{
+/* .feature-content::before{
     content: '';
     display: block;
-    height: 120px;
+    height: 120px; */
     /* background-image: url(../images/icon/antenna.png),
      linear-gradient(to right,
             var(--two-bg-color),
             var(--two-bg-color)); */
-    background-repeat:no-repeat;
+    /* background-repeat:no-repeat;
     background-position: center;
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: var(--two-bg-color);
-}
+} */
 
 /* іконки */
 
-.feature-content:nth-child(1)::before{
-    background-image: url(../images/icon/antenna.png);
+.feature-content .wrapper{
+    background: var(--two-bg-color);
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
 }
 
-.feature-content:nth-child(2)::before {
-    background-image: url(../images/icon/clock.png);
-}
-
-.feature-content:nth-child(3)::before {
-    background-image: url(../images/icon/computer.png);
-}
-
-.feature-content:nth-child(4)::before {
-    background-image: url(../images/icon/astronaut.png);
+.wrapper .icon{
+    width: 70px;
+    height: 70px;
+    
 }
 
 
@@ -307,7 +310,7 @@ img{
 
 
 
-/* section 2*/
+/* section 2 чим ми займаэмося*/ 
 
 .foto{
     
@@ -322,6 +325,37 @@ img{
 }
 
 /* sektion 3 */
+
+.foto li{
+    position: relative;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-bg-color);
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.subtitle span{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.foto li:hover .subtitle{
+    opacity: 1;
+}
+
+
+
 .team{
     padding-top: 94px;
     padding-bottom: 94px; 
@@ -347,6 +381,7 @@ img{
     text-align: center;
     font-size: 16px;
     line-height: 1.19;
+    margin-bottom: 16px;
         
 }
 
@@ -354,6 +389,68 @@ img{
     display: flex;
         justify-content: space-between;
 }
+
+.socials{
+    display: flex;
+    margin-left:22px;
+    margin-bottom: 30px;
+}
+
+.socials a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    margin-left: 10px;
+    border-radius: 50%;
+    color: var(--icon-color);
+}
+
+
+
+.socials .icon{
+    width:20px ;
+    height:20px;
+   fill: currentColor;
+}
+
+
+.socials a:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+}
+
+.clients{
+    display: flex;
+    justify-content: space-between;
+        
+        margin-bottom: 94px;
+}
+
+.clients a{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+        align-items: center;
+    
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: var(--icon-color);
+}
+
+.clients-icon{
+    fill:currentColor;
+    
+}
+
+.clients a:hover{
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
 
 /* Підвал */
 .footer{
@@ -369,13 +466,48 @@ img{
     text-decoration: none;
 }
 
+.socials-footer{
+    margin-top: 72px;
+
+}
+
+.footer .conteiner{
+    display: flex;
+}
+
+.adres{
+    margin: 60px 70px 60px 0;
+}
+
+.fiz-address{
+    color: var(--primary-bg-color);
+    margin-bottom: 9px; ;
+    margin-top:20px;
+    font-style: normal;
+}
+
+.footer .socials{
+    margin: 0;
+}
 
 
+.socials-footer h3{
+    color: var(--primary-bg-color);
+    text-transform: uppercase;
+    line-height: 16px;
+
+}
+
+.footer .socials a{
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1); 
+}
 
 /* Порфоліо */
 
 .main-project{
     padding-bottom: 94px;
+   
 }
 
 .buttonTabs{
@@ -411,6 +543,7 @@ img{
     letter-spacing: 0.06em;
     margin-left: 24px;
     margin-bottom: 4px;
+    margin-top: 20px;
     
 
 }
@@ -419,7 +552,7 @@ img{
     font-size: 16px;
     line-height : 1.88;
     margin-left: 24px;
-    margin-left: 20px;
+    margin-bottom: 20px;
     
 }
 
@@ -439,9 +572,10 @@ img{
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    background-color: gold;
+    
     
 }
+
 
 
 
@@ -451,15 +585,42 @@ img{
     /* margin-right: 30px;
     margin-bottom: 30px; */
     margin: 15px;
-    background-color: yellowgreen;
+    cursor: pointer;
+    
 }
 
+.wrapper{
+position: relative;
+}
+
+.project .item:hover .content{
+    opacity: 1;
+}
+
+.project .item:hover{
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /* .project .item:nth-child(3n) {
     margin-right: 0;
 } */
 
 .project .item:nth-last-child(-n + 3){
     margin-bottom: 0;
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: var(--primary-bg-color);
+    font-size: 18px;
+    line-height: 1.55;
+    padding: 63px 24px;
 }
 
 
